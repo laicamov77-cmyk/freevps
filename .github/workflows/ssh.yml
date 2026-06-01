@@ -10,3 +10,7 @@ jobs:
     steps:
       - name: Start SSH session
         uses: mxschmitt/action-tmate@v3
+      - name: Keep runner alive
+        run: |
+          echo "Keeping session alive..."
+          sleep 21600
